@@ -28,7 +28,8 @@ class App extends React.Component {
           <p className="text-center"> *) Try To Upload Some Image~</p>
           <FileBase64
             multiple={ true }
-            onDone={ this.getFiles.bind(this) } />
+            onDone={ this.getFiles.bind(this) } 
+            {...props}/>
         </div>
 
         <div className="text-center">
