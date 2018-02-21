@@ -149,8 +149,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return _react2.default.createElement('input', _extends({
 	        type: 'file',
 	        onChange: this.handleChange.bind(this),
-	        multiple: this.props.multiple
-	      }, props));
+	        multiple: this.props.multiple,
+	        accept: 'images/*'
+	      }, this.props));
 	    }
 	  }]);
 

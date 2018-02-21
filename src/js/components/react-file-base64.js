@@ -67,7 +67,8 @@ export default class FileBase64 extends React.Component {
         type="file"
         onChange={ this.handleChange.bind(this) }
         multiple={ this.props.multiple } 
-        {...props}/>
+        accept="images/*"
+        {...this.props}/>
     );
   }
 }

@@ -29,7 +29,7 @@ class App extends React.Component {
           <FileBase64
             multiple={ true }
             onDone={ this.getFiles.bind(this) } 
-            {...props}/>
+            {...this.props}/>
         </div>
 
         <div className="text-center">
